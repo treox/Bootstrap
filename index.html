@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/vapor/bootstrap.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" id="top">Logo</a>
+            <div class="justify-content-right">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="list-style-type: none;">
+                          <li><a class="dropdown-item nav-link active" aria-current="page" href="#">Home</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Products</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">About</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container">
+        <div class="row">
+                <img  src="./images/andrey-metelev-DEuansgqjns-unsplash.jpg" class="img-fluid col-4" alt="img1" />
+                <img  src="./images/andrey-metelev-DEuansgqjns-unsplash.jpg" class="img-fluid col-4" alt="img1" />
+                <img src="./images/andrey-metelev-DEuansgqjns-unsplash.jpg" class="img-fluid col-4" alt="img1" />
+        </div>
+    </div>
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-4">
+                <img src="./images/nathalie-jolie-vj0Rh5iTwgM-unsplash.jpg" class="card-img-top" alt="article image1" />
+                <div class="card-body">
+                    <h5 class="card-title">Article 1</h5>
+                    <p class="card-text">Article text</p>
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="./images/yulia-khlebnikova-BayU5G2jPaQ-unsplash.jpg" class="card-img-top" alt="article image2" />
+                <div class="card-body">
+                    <h5 class="card-title">Article 2</h5>
+                    <p class="card-text">Article text</p>
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="./images/nuttawut-anek-vgNU1ujE8Mk-unsplash.jpg" class="card-img-top" alt="article image3" />
+                <div class="card-body">
+                    <h5 class="card-title">Article 3</h5>
+                    <p class="card-text">Article text</p>
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <ul class="nav nav-pills flex-column col-2">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+            <div class="col-10">
+                <h5>Some content</h5>
+                <br />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quia non nam accusamus incidunt illum,
+                minima praesentium dolore perferendis, maxime repudiandae tempora fugiat recusandae facilis quis quisquam 
+                debitis perspiciatis itaque.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <div id="contact-carousel" class="col-5 carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <form class="carousel-item">
+                        <div class="row">
+                            <label for="name" class="col-2 col-form-label">Name</label>
+                            <div class="col 10">
+                                <input type="text" class="form-control" id="name" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <label for="email" class="col-2 col-form-label">Email</label>
+                            <div class="col 10">
+                                <input type="email" class="form-control" id="email" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <label for="telephone" class="col-2 col-form-label">Telephone</label>
+                            <div class="col 10">
+                                <input type="tel" class="form-control" id="telephone" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <label for="message" class="col-2 col-form-label">Message</label>
+                            <div class="col 10">
+                                <textarea class="form-control" name="message" id="message"></textarea>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <label for="message" class="col-4 col-form-label">Submit/reset</label>
+                            <div class="col-2">
+                                <button type="reset" class="btn btn-danger">Reset</button>
+                            </div>
+                            <br />
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-success">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="carousel-item active">
+                        <img src="./images/daniel-fazio-DzqeB43HfnE-unsplash.jpg" width="526" height="310" class="d-block w-100" alt="carousel image1">
+                    </div>
+                      <div class="carousel-item">
+                        <img src="./images/obi-onyeador-E5J_4thJwYk-unsplash.jpg" width="526" height="310" class="d-block w-100" alt="carousel image2">
+                    </div>
+                      <div class="carousel-item">
+                        <img src="./images/solstice-hannan-ianB8yPCQSc-unsplash.jpg" width="526" height="310" class="d-block w-100" alt="carousel image3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#contact-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#contact-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-1">
+                <span>&copy;</span>
+            </div>
+            <div class="col-11">
+                <a href="#top"> <span>&uArr;</span> Back to top</a>
+            </div>
+        </div>
+        <br />
+    </footer>
+
+    <script src="./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
